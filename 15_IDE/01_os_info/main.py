@@ -1,4 +1,4 @@
-# TODO запустить этот скрипт и закомитить результат его работы (файл os_info.txt)
+
 
 import platform
 import sys
