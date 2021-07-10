@@ -1,9 +1,6 @@
 films = ['Крепкий орешек', 'Назад в будущее', 'Таксист', 'Леон', 'Богемская рапсодия', 'Город грехов', 'Мементо', 'Отступники', 'Деревня']
 like_film = []
-count = 0
-for _ in films:
-    count += 1
-for _ in range(count):
+for i in films:
     flag = False
     new_film = input('Введите название любимого фильма: ')
     for i in films:
