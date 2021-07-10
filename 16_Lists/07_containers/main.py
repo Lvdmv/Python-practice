@@ -1,16 +1,24 @@
 containers = int(input('Кол-во контейнеров: '))
 num_conteiners = []
-for _ in range(containers):
+while containers != 0:
     container = int(input('Введите вес контейнера: '))
-    num_conteiners.append(container)
-x = int(input('Введите вес нового контейнера: '))
-num_conteiners = num_conteiners.append(x)
-coun = 0
-for num in num_conteiners:
-    coun += 1
+    if container > 200:
+        print('Вес контейнера не должен превышать 200кг!')
+    else:
+        num_conteiners.append(container)
+        containers -= 1
+while True:
+   x = int(input('Введите вес нового контейнера: '))
+   if x > 200:
+       print('Вес контейнера не должен превышать 200кг!')
+   else:
+       break
+num_conteiners.append(0)
 index = 0
-for i in range(coun):
+for i in range(len(num_conteiners)):
     if x > num_conteiners[i]:
         index = i + 1
         break
+
 print('Номер, куда встанет новый контейнер:', index)
+print('список: ', num_conteiners)
