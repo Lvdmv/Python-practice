@@ -10,4 +10,17 @@ violator_songs = [
     ['Clean', 5.83]
 ]
 
-# TODO здесь писать код
+def index_song(song):
+    for i in range(len(violator_songs)):
+        if violator_songs[i][0] == song:
+            return violator_songs[i][1]
+
+song_amt = int(input('Сколько песен выбрать? '))
+song_duration = 0
+for i_song in range(song_amt):
+    print('Название', i_song + 1, 'песни: ', end = ' ')
+    song = input()
+    index_song(song)
+    song_duration += index_song(song)
+print('\nОбщее время звучания песен: ', round(song_duration, 2), 'минут')
+
