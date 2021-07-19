@@ -1,58 +1,27 @@
 def simmetrical_seq(my_list):
-    new_list = ''
-    for i in my_list:
-        new_list = i + new_list
-    return new_list
+    new_list = []
+    for i in range(len(my_list)-1, -1, -1):
+        new_list.append(my_list[i])
+    if new_list == my_list:
+        return True
+    else:
+        return False
 
 num_amt = int(input('Кол-во чисел: '))
-seq_list = ''
+seq_list = []
+count = 0
 for _ in range(num_amt):
     print('Число: ', end = ' ')
-    digit = input()
-    seq_list += digit
-count = 0
-add_digit = ''
-new_list = simmetrical_seq(seq_list)
-new_seq_list = seq_list
-for i_digit in new_list:
-    if count > 0:
-        new_seq_list += i_digit
-        add_digit += i_digit
-        if simmetrical_seq(new_seq_list) == new_seq_list:
-            break
-    count += 1
-new_seq_list = seq_list
-count1 = 1
-add_digit1 = ''
-for i_digit in seq_list:
-    new_seq_list += i_digit
-    add_digit1 += i_digit
-    if simmetrical_seq(new_seq_list) == new_seq_list:
-        break
-    count1 += 1
+    digit = int(input())
+    seq_list.append(digit)
 print('Последовательность: ', seq_list)
-if  count < count1:
-    print('Нужно приписать чисел: ', count)
-    print('Сами числа: ', add_digit)
-else:
-    print('Нужно приписать чисел: ', count1)
-    print('Сами числа: ', add_digit1)
+print('Сами числа: ', end = ' ')
+while True:
+    print(seq_list[0], end = ' ')
+    count += 1
+    seq_list.remove(seq_list[0])
+    if simmetrical_seq(seq_list):
+        break
+print('\nНужно приписать чисел: ', count)
 
-
-
-
-
-
-
-
-# #Кол-во чисел: 5
-# Число: 1
-# Число: 2
-# Число: 1
-# Число: 2
-# Число: 2
-#
-# Последовательность: 1 2 1 2 2
-# Нужно приписать чисел: 3
-# Сами числа: 1 2 1
 
