@@ -2,11 +2,11 @@ def delIndex(startIndex, k, my_list):
     if k >= len(my_list):
         nextIndex = startIndex + k - (k // len(my_list)) * len(my_list) - 1
         while nextIndex > len(my_list) - 1:
-            nextIndex -= len(my_list)
+            nextIndex %= len(my_list)
     else:
         nextIndex = startIndex + k - 1
         while nextIndex > len(my_list) - 1:
-            nextIndex -= len(my_list)
+            nextIndex %= len(my_list)
     return nextIndex
 
 def startPoint(k, my_list):
