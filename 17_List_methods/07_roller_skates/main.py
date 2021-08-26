@@ -17,7 +17,7 @@ for i_sk in range(skaters):
 count = 0
 for i in sorted(skater_list):
     for j in sorted(roller_list):
-        if i == j:
+        if i <= j:
             count += 1
             roller_list.remove(j)
             break
