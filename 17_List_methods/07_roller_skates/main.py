@@ -1,34 +1,27 @@
+rollers = int(input('Кол-во коньков: '))
+roller_list = []
+skater_list = []
 
-skates_amt = int(input('Кол-во коньков: '))
-skates_list = []
-skaters_list = []
+for i_rol in range(rollers):
+    print('Размер', i_rol + 1, 'пары: ', end=' ')
+    size_roller = int(input())
+    roller_list.append(size_roller)
 
-for i_skates_amt in range(skates_amt):
-    print('Размер ', i_skates_amt + 1, ' пары: ', end = ' ')
-    skates = int(input())
-    skates_list.append(skates)
-skates_men = int(input('\nКол-во людей: '))
+skaters = int(input('\nКол-во людей: '))
+for i_sk in range(skaters):
+    print('Размер ноги', i_sk + 1, 'человека: ', end=' ')
+    size_skater = int(input())
+    skater_list.append(size_skater)
+############
 
-for i_skates_amt in range(skates_men):
-    print('Размер ноги ', i_skates_amt + 1, ' человека: ', end = ' ')
-    skater = int(input())
-    skaters_list.append(skater)
 count = 0
-for i in sorted(skaters_list):
-    for num in sorted(skates_list):
-        if i == num:
-          if skaters_list.count(i) <= skates_list.count(num):
-              count += skaters_list.count(i)
-              index = i
-          else:
-              count += skates_list.count(num)
-              index = num
-          for _ in range(skaters_list.count(index)):
-              skaters_list.remove(index)
-          index = 0
-          break
+for i in sorted(skater_list):
+    for j in sorted(roller_list):
+        if i <= j:
+            count += 1
+            roller_list.remove(j)
+            break
+    skater_list.remove(i)
+
 
 print('\nНаибольшее кол-во людей, которые могут взять ролики: ', count)
-
-
-
