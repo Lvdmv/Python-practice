@@ -1,1 +1,1 @@
-print([(list(range(x, x + 9, 4))) for x in range(1, 5)])
+print([[x for x in range(y, 13, 4)] for y in range(1, 5)])
