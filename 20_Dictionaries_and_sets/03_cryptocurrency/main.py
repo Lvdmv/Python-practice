@@ -45,4 +45,13 @@ data = {
 }
 
 
-# TODO здесь писать код
+
+
+data['ETH']['total_diff'] = 100
+data['tokens'][0]['fst_token_info']['name'] = 'doge'
+data['ETH']['total_out'] = data['tokens'][0].pop('totalOut')
+data['tokens'][1]['sec_token_info']['price'] = 'total_price'
+
+for i_data in data.keys():
+    print(i_data, ':', data[i_data])
+
