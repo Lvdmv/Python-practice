@@ -24,4 +24,20 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+for i_goods in goods.values():
+    print(
+        ''.join({
+            i_key for i_key in goods.keys() if goods[i_key] == i_goods})
+        + '-', sum({
+            i_store['quantity'] for i_store in store[i_goods]
+                    }
+                   )
+        ,'шт, стоимость', sum({
+            i_store['quantity'] * i_store['price'] for i_store in store[i_goods]
+        }),'руб'
+    )
+
+# Лампа - 27 шт, стоимость 1134 руб
+# Стол - 54 шт, стоимость 27860 руб
+# Диван - 3 шт, стоимость 3550 руб
+# Стул - 105 шт, стоимость 10311 руб
