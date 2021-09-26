@@ -1,4 +1,3 @@
-
 def simmetrical_str(my_str):
     new_list = dict()
     for i_dict in my_str:
@@ -12,10 +11,9 @@ def simmetrical_str(my_str):
     else:
         return False
 
+
 new_str = input('Введите строку: ')
-if new_str == new_str[::-1]:
-    print('Можно сделать палиндромом')
-elif simmetrical_str(new_str):
+if simmetrical_str(new_str):
     print('Можно сделать палиндромом')
 else:
     print('Нельзя сделать палиндромом')
