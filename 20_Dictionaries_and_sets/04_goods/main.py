@@ -1,3 +1,10 @@
+def counter(i_goods):
+    summ = [0, 0]
+    for i in range(len(store[goods[i_goods]])):
+        summ[0] += store[goods[i_goods]][i]['quantity']
+        summ[1] += store[goods[i_goods]][i]['quantity'] * store[goods[i_goods]][i]['price']
+    return print(i_goods, '-',summ[0] , 'шт, стоимость ',summ[1], 'руб')
+
 goods = {
     'Лампа': '12345',
     'Стол': '23456',
@@ -24,20 +31,8 @@ store = {
     ],
 }
 
-for i_goods in goods.values():
-    print(
-        ''.join({
-            i_key for i_key in goods.keys() if goods[i_key] == i_goods})
-        + '-', sum({
-            i_store['quantity'] for i_store in store[i_goods]
-                    }
-                   )
-        ,'шт, стоимость', sum({
-            i_store['quantity'] * i_store['price'] for i_store in store[i_goods]
-        }),'руб'
-    )
 
-# Лампа - 27 шт, стоимость 1134 руб
-# Стол - 54 шт, стоимость 27860 руб
-# Диван - 3 шт, стоимость 3550 руб
-# Стул - 105 шт, стоимость 10311 руб
+for i_goods in goods.keys():
+    counter(i_goods)
+
+
