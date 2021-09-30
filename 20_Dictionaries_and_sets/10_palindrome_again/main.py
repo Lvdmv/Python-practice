@@ -6,10 +6,8 @@ def simmetrical_str(my_str):
         else:
             new_list[i_dict] += 1
 
-    if len({i_num for i_num in new_list.keys() if new_list[i_num] % 2 != 0}) <= 1:
-        return True
-    else:
-        return False
+    return len({i_num for i_num in new_list.keys() if new_list[i_num] % 2 != 0}) <= 1
+
 
 
 new_str = input('Введите строку: ')
