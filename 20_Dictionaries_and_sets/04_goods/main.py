@@ -1,3 +1,12 @@
+def counter(i_key):
+    sum_quant = 0
+    sum_prise = 0
+    for i_store in store[goods[i_key]]:
+        sum_quant += i_store['quantity']
+        sum_prise += i_store['quantity'] * i_store['price']
+    return f'{i_goods} - {sum_quant} шт, стоимость {sum_prise}'
+
+
 goods = {
     'Лампа': '12345',
     'Стол': '23456',
@@ -24,4 +33,6 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+
+for i_goods in goods:
+    print(counter(i_goods))
