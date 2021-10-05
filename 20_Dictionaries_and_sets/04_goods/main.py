@@ -1,9 +1,11 @@
-def counter(i_goods):
-    summ = [0, 0]
-    for i in range(len(store[goods[i_goods]])):
-        summ[0] += store[goods[i_goods]][i]['quantity']
-        summ[1] += store[goods[i_goods]][i]['quantity'] * store[goods[i_goods]][i]['price']
-    return print(i_goods, '-',summ[0] , 'шт, стоимость ',summ[1], 'руб')
+def counter(i_key):
+    sum_quant = 0
+    sum_prise = 0
+    for i_store in store[goods[i_key]]:
+        sum_quant += i_store['quantity']
+        sum_prise += i_store['quantity'] * i_store['price']
+    return f'{i_goods} - {sum_quant} шт, стоимость {sum_prise}'
+
 
 goods = {
     'Лампа': '12345',
@@ -32,7 +34,5 @@ store = {
 }
 
 
-for i_goods in goods.keys():
-    counter(i_goods)
-
-
+for i_goods in goods:
+    print(counter(i_goods))
