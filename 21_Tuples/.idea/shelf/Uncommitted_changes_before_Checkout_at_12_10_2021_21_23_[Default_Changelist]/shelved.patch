@@ -1,0 +1,46 @@
+Index: 03_function/main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># TODO здесь писать код\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03_function/main.py b/03_function/main.py
+--- a/03_function/main.py	(revision 2d2d864e6e29aa71e28c90c45f7ec24bf55b8338)
++++ b/03_function/main.py	(date 1634062739749)
+@@ -1,1 +1,2 @@
+-# TODO здесь писать код
++
++new_tuple = tuple(input('Введите новый кортеж: '))
+\ No newline at end of file
+Index: 02_universal_prog_2/main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># TODO здесь писать код\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02_universal_prog_2/main.py b/02_universal_prog_2/main.py
+--- a/02_universal_prog_2/main.py	(revision 2d2d864e6e29aa71e28c90c45f7ec24bf55b8338)
++++ b/02_universal_prog_2/main.py	(date 1634058392169)
+@@ -1,1 +1,19 @@
+-# TODO здесь писать код
++def is_prime(number, length):
++    return [i_prime for i_prime in range(2, length + 1) if (number % i_prime == 0 and number != i_prime) or number == 1]
++
++def exam_prime(object):
++    return [i_str for i_num, i_str in enumerate(object) if not is_prime(i_num, len(object))]
++
++text_str = (100, 200, 300, 'буква', 0, 2, 'а')
++
++if isinstance(text_str, tuple):
++    print(f'Допустим, есть такой кортеж: {text_str}')
++elif isinstance(text_str, dict):
++    print(f'Допустим, есть такой словарь: {text_str}')
++elif isinstance(text_str, str):
++    print(f'Допустим, есть такая строка: {text_str}')
++elif isinstance(text_str, list):
++    print(f'Допустим, есть такой список: {text_str}')
++print()
++print(exam_prime(text_str))
++
