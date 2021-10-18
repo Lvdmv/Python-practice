@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 4. Игроки - сделана">
+    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 3. Функция - сделана">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_players/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_players/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +47,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="21_Tuples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_universal_prog_2" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_universal_prog_2/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -75,12 +76,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_code_review" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_players" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_code_review/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_players/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,12 +97,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Python39/Tools/pynche" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Python39/Tools/pynche/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Python39" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,8 +113,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python.main (2)" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (2)" />
     </list>
     <recent_temporary>
       <list>
@@ -169,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634063650570</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Задача 3. Функция - сделана">
+      <created>1634549075577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634549075577</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Задача 1. Ревью кода - сделана" />
     <MESSAGE value="Задача 2. Универсальная программа 2 - сделана" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задача 2. Универсальная программа 2 - сделана" />
+    <MESSAGE value="Задача 3. Функция - сделана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задача 3. Функция - сделана" />
   </component>
 </project>
