@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 1. Ревью кода - сделана" />
+    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 4. Игроки - сделана">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,13 +17,6 @@
             <value>
               <list>
                 <branch-info repo="$PROJECT_DIR$/.." source="master" />
-              </list>
-            </value>
-          </entry>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$/.." source="origin/master" />
               </list>
             </value>
           </entry>
@@ -48,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Python39/Tools/pynche" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -115,11 +110,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main (2)" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
@@ -169,14 +169,7 @@
       <option name="project" value="LOCAL" />
       <updated>1634063650570</updated>
     </task>
-    <task id="LOCAL-00006" summary="Задача 1. Ревью кода - сделана">
-      <created>1634067492499</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1634067492499</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,8 +185,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задача 2. Универсальная программа 2 - сделана" />
     <MESSAGE value="Задача 1. Ревью кода - сделана" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задача 1. Ревью кода - сделана" />
+    <MESSAGE value="Задача 2. Универсальная программа 2 - сделана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задача 2. Универсальная программа 2 - сделана" />
   </component>
 </project>
