@@ -19,26 +19,17 @@ students = {
     }
 }
 
+def listInterest_lenSurname(my_dict):
+    lst_int = []
+    len_surname = 0
+    for i_value in my_dict.values():
+        lst_int.extend(i_value['interests'])
+        len_surname += len(i_value['surname'])
+    return lst_int, len_surname
 
-def f(dict):
-    lst = []
-    string = ''
-    for i in dict:
-        lst += (dict[i]['interests'])
-        string += dict[i]['surname']
-    cnt = 0
-    for s in string:
-        cnt += 1
-    return lst, cnt
+pairs = [(f'{i_id} - {i_age["age"]}') for i_id, i_age in students.items()]
+print(pairs)
 
+interest_lst, length_surname = listInterest_lenSurname(students)
+print(interest_lst, length_surname)
 
-pairs = []
-for i in students:
-    pairs += (i, students[i]['age'])
-
-
-my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
-
-# TODO исправить код
