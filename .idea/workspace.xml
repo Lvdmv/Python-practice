@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50e072fe-b365-4ffb-88d6-c4d45a4d8cc3" name="Default Changelist" comment="Задача 9. Родословная - сделана" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="user1 &lt;lvdmv@live.ru&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/17_List_methods/01_scary_code/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/17_List_methods/02_line/main.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1uuKjbJVI4u55WmHVZBltxjckbe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/20_Dictionaries_and_sets" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user1\PycharmProjects\python-ds\15_IDE\07_years" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="lesson6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/lesson6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lesson7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/lesson7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20_Dictionaries_and_sets/09_pedigree" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20_Dictionaries_and_sets/09_pedigree/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (5)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/16_Lists/10_sort" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/16_Lists/10_sort/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20_Dictionaries_and_sets/01_songs_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20_Dictionaries_and_sets/01_songs_2/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (5)" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.lesson7" />
+        <item itemvalue="Python.lesson6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50e072fe-b365-4ffb-88d6-c4d45a4d8cc3" name="Default Changelist" comment="" />
+      <created>1625510170183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625510170183</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Задача 3. Случайные соревнования - сделана">
+      <created>1630149209364</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149209364</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Задача 4. Тренируемся со срезами - сделана">
+      <created>1630149224598</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149224598</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Задача 5. Разворот - сделана">
+      <created>1630149238928</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149238928</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Задача 6. Сжатие списка - сделана">
+      <created>1630149249857</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149249857</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Задача 7. Двумерный список - сделана">
+      <created>1630149266459</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149266459</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Задача 8. Развлечение - сделана">
+      <created>1630149276791</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149276791</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Задача 9. Список списков 2 - сделана">
+      <created>1630149290077</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149290077</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Задача 10. Шифр Цезаря - сделана">
+      <created>1630149317248</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149317248</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Задача 1. Гласные буквы - сделана">
+      <created>1630149378940</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1630149378940</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Задача 1. Гласные буквы - сделана">
+      <created>1630152514871</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1630152514871</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Задача 1. Гласные буквы - сделана">
+      <created>1630153093401</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1630153093401</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Задача 7. Двумерный список - сделана">
+      <created>1630171185919</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1630171185919</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Задача 9. Список списков 2 - сделана">
+      <created>1630171927998</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1630171927998</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Задача 1. Меню ресторана - сделана">
+      <created>1630686411300</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1630686411301</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Задача 2. Самое длинное слово - сделана">
+      <created>1630691782271</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1630691782271</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Задача 3. Файлы - сделана">
+      <created>1630692051160</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1630692051160</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Задача 4. Заглавные буквы - сделана">
+      <created>1630704051676</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1630704051677</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Задача 5. Пароль - сделана">
+      <created>1630745148616</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1630745148616</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Задача 6. Сжатие - сделана">
+      <created>1630752303017</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1630752303017</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Задача 7. IP - адрес 2 - сделана">
+      <created>1630758984409</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1630758984410</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Задача 7. IP - адрес 2 - сделана">
+      <created>1630759274329</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1630759274329</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Задача 8. Бегущая строка - сделана">
+      <created>1630766740186</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1630766740186</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Задача 9. Сообщение - сделана">
+      <created>1630942269601</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1630942269610</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Задача 10. Истина - сделана">
+      <created>1631804649883</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1631804649883</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Задача 1. Песни 2 - сделана">
+      <created>1631979705500</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1631979705501</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Задача 2. География - сделана">
+      <created>1632075967960</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1632075967960</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Задача 3. Криптовалюта - сделана">
+      <created>1632079995120</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1632079995120</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Задача 2. География - сделана">
+      <created>1632080319284</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1632080319284</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Задача 4. Товары - сделана">
+      <created>1632123387547</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1632123387548</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Задача 5. Гистограмма частоты 2 - сделана">
+      <created>1632126351397</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1632126351397</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Задача 5. Гистограмма частоты 2 - сделана">
+      <created>1632130594041</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1632130594041</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Задача 5. Гистограмма частоты 2 - сделана">
+      <created>1632130945977</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1632130945977</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Задача 6. Словарь синонимов - сделана">
+      <created>1632133254256</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1632133254256</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Задача 7. Пицца - сделана">
+      <created>1632242846632</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242846633</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Задача 8. Угадай число - сделана">
+      <created>1632255548681</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1632255548682</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Задача 9. Родословная - сделана">
+      <created>1632657630912</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1632657630912</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Задача 10. Снова палиндром - сделана">
+      <created>1632677219486</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1632677219486</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Задача 10. Снова палиндром - сделана">
+      <created>1632679783406</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1632679783406</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Задача 2. География - сделана">
+      <created>1632744523987</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1632744523987</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Задача 2. География - сделана">
+      <created>1632744607432</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1632744607432</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Задача 4. Товары - сделана">
+      <created>1632922083728</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1632922083728</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Задача 6. Словарь синонимов - сделана">
+      <created>1632922376544</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1632922376544</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Задача 7. Пицца синонимов - сделана">
+      <created>1632923087043</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1632923087043</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Задача 8. Угадай число - сделана">
+      <created>1632939495354</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1632939495354</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Задача 9. Родословная - сделана">
+      <created>1632940202726</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1632940202726</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Задача 9. Родословная - сделана">
+      <created>1632948375307</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1632948375307</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Задача 9. Родословная - сделана">
+      <created>1632979053744</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1632979053744</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Задача 9. Родословная - сделана">
+      <created>1632979081025</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1632979081025</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Задача 9. Родословная - сделана">
+      <created>1632979242489</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1632979242490</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Задача 10. Шифр Цезаря - сделана" />
+    <MESSAGE value="Задача 1. Гласные буквы - сделана" />
+    <MESSAGE value="Задача 7. Двумерный список - сделана" />
+    <MESSAGE value="Задача 9. Список списков 2 - сделана" />
+    <MESSAGE value="Задача 1. Меню ресторана - сделана" />
+    <MESSAGE value="Задача 2. Самое длинное слово - сделана" />
+    <MESSAGE value="Задача 3. Файлы - сделана" />
+    <MESSAGE value="Задача 4. Заглавные буквы - сделана" />
+    <MESSAGE value="Задача 5. Пароль - сделана" />
+    <MESSAGE value="Задача 6. Сжатие - сделана" />
+    <MESSAGE value="Задача 7. IP - адрес 2 - сделана" />
+    <MESSAGE value="Задача 8. Бегущая строка - сделана" />
+    <MESSAGE value="Задача 9. Сообщение - сделана" />
+    <MESSAGE value="Задача 10. Истина - сделана" />
+    <MESSAGE value="Задача 1. Песни 2 - сделана" />
+    <MESSAGE value="Задача 3. Криптовалюта - сделана" />
+    <MESSAGE value="Задача 5. Гистограмма частоты 2 - сделана" />
+    <MESSAGE value="Задача 7. Пицца - сделана" />
+    <MESSAGE value="Задача 10. Снова палиндром - сделана" />
+    <MESSAGE value="Задача 2. География - сделана" />
+    <MESSAGE value="Задача 4. Товары - сделана" />
+    <MESSAGE value="Задача 6. Словарь синонимов - сделана" />
+    <MESSAGE value="Задача 7. Пицца синонимов - сделана" />
+    <MESSAGE value="Задача 8. Угадай число - сделана" />
+    <MESSAGE value="Задача 9. Родословная - сделана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задача 9. Родословная - сделана" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
