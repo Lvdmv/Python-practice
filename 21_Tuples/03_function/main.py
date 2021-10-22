@@ -19,3 +19,4 @@ if elem.isdigit():
     print(new_tuple(fst_tuple, int(elem)))
 else:
     print(new_tuple(fst_tuple, elem))
+
