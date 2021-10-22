@@ -20,3 +20,5 @@ if elem.isdigit():
 else:
     print(new_tuple(fst_tuple, elem))
 
+
+
