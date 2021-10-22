@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 2. Универсальная программа 2 - сделана" />
+    <list default="true" id="04e3d4bd-3adc-4357-b528-b1d1027830e8" name="Default Changelist" comment="Задача 9. Протокол соревнований сделана">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_10_2021_21_23__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_10_2021_21_23__Default_Changelist_.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="task2" />
+        <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -87,6 +89,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (1)" />
@@ -141,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634063650570</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Задача 9. Протокол соревнований сделана">
+      <created>1634892802177</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634892802177</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Задача 1. Ревью кода - сделана" />
     <MESSAGE value="Задача 2. Универсальная программа 2 - сделана" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задача 2. Универсальная программа 2 - сделана" />
+    <MESSAGE value="Задача 9. Протокол соревнований сделана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задача 9. Протокол соревнований сделана" />
   </component>
 </project>
