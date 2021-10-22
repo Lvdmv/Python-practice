@@ -25,3 +25,4 @@ print('\nИтоги соревнований: ')
 for i_place in range(1, 4):
     print(f'{i_place} место. {scores[i_place -1][0]} ({scores[i_place -1][1][0]})')
 
+
