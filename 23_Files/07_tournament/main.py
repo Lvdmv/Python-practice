@@ -1,4 +1,4 @@
-n = input('Введите проходной балл; ')
+n = input('Введите проходной балл: ')
 count_players = int(input('Введите кол-во участников: '))
 list_players = []
 for _ in range(count_players):
@@ -54,8 +54,8 @@ for i_player in first_tour:
 first_tour.close()
 
 list_candid = []
-for num, i_suc_candid in enumerate(sorted(dict_candid.items(), reverse=True)):
-    list_candid.append(f'{num+1}) {" ".join(i_suc_candid)}')
+for i_num, i_suc_candid in enumerate(sorted(dict_candid, key=dict_candid.get, reverse=True)):
+    list_candid.append(f'{i_num+1}) {i_suc_candid} {"".join(dict_candid[i_suc_candid])}')
 new_list_candid = '\n'.join(list_candid)
 
 second_tour = open('second_tour.txt', 'w')
