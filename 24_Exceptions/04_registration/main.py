@@ -16,10 +16,16 @@ def error_function(data):
             raise NameError
         if '@' not in data[1] and '.' not in data[1]:
             raise SyntaxError
-        if 10 <= int(data[2]) >= 99:
-            raise ValueError
+        if not data[2].isdigit():
+            raise TypeError
+        if not 10 <= int(data[2]) <= 99:
+            raise BaseException
     except ValueError:
         print('Не присутствуют все три поля')
+    except TypeError:
+        print('Поле возраст содержит не только числа')
+    except BaseException:
+        print('Значение возраста выходит из заданного диапазона')
     except NameError:
         print('Поле имени содержит НЕ только буквы')
     except SyntaxError:
