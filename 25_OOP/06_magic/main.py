@@ -1,14 +1,14 @@
 class Water:
     def __add__(self, other):
-        if type(other) is Air:
+        if isinstance(other, Air):
             return Storm()
-        elif type(other) is Fire:
+        elif isinstance(other, Fire):
             return Vapor()
-        elif type(other) is Earth:
+        elif isinstance(other, Earth):
             return Dirt()
-        elif type(other) is Time:
+        elif isinstance(other, Time):
             return Ocean()
-        elif type(other) is Magic:
+        elif isinstance(other, Magic):
             return Mana()
         else:
             return Nothing()
@@ -16,15 +16,15 @@ class Water:
 
 class Air:
     def __add__(self, other):
-        if type(other) is Water:
+        if isinstance(other, Water):
             return Storm()
-        elif type(other) is Fire:
+        elif isinstance(other, Fire):
             return Lightning()
-        elif type(other) is Earth:
+        elif isinstance(other, Earth):
             return Dust()
-        elif type(other) is Time:
+        elif isinstance(other, Time):
             return Tornado()
-        elif type(other) is Magic:
+        elif isinstance(other, Magic):
             return Charms()
         else:
             return Nothing()
@@ -32,15 +32,15 @@ class Air:
 
 class Fire:
     def __add__(self, other):
-        if type(other) is Air:
+        if isinstance(other, Air):
             return Lightning()
-        elif type(other) is Water:
+        elif isinstance(other, Water):
             return Vapor()
-        elif type(other) is Earth:
+        elif isinstance(other, Earth):
             return Lava()
-        elif type(other) is Time:
+        elif isinstance(other, Time):
             return Laser()
-        elif type(other) is Magic:
+        elif isinstance(other, Magic):
             return Spell()
         else:
             return Nothing()
@@ -48,15 +48,15 @@ class Fire:
 
 class Earth:
     def __add__(self, other):
-        if type(other) is Air:
+        if isinstance(other, Air):
             return Dust()
-        elif type(other) is Fire:
+        elif isinstance(other, Fire):
             return Lava()
-        elif type(other) is Water:
+        elif isinstance(other, Water):
             return Dirt()
-        elif type(other) is Time:
+        elif isinstance(other, Time):
             return Mountain()
-        elif type(other) is Magic:
+        elif isinstance(other, Magic):
             return Gold()
         else:
             return Nothing()
@@ -64,15 +64,15 @@ class Earth:
 
 class Time:
     def __add__(self, other):
-        if type(other) is Air:
+        if isinstance(other, Air):
             return Tornado()
-        elif type(other) is Fire:
+        elif isinstance(other, Fire):
             return Laser()
-        elif type(other) is Water:
+        elif isinstance(other, Water):
             return Ocean()
-        elif type(other) is Earth:
+        elif isinstance(other, Earth):
             return Mountain()
-        elif type(other) is Magic:
+        elif isinstance(other, Magic):
             return BackInTime()
         else:
             return Nothing()
@@ -80,15 +80,15 @@ class Time:
 
 class Magic:
     def __add__(self, other):
-        if type(other) is Air:
+        if isinstance(other, Air):
             return Charms()
-        elif type(other) is Fire:
+        elif isinstance(other, Fire):
             return Spell()
-        elif type(other) is Water:
+        elif isinstance(other, Water):
             return Mana()
-        elif type(other) is Earth:
+        elif isinstance(other, Earth):
             return Gold()
-        elif type(other) is Time:
+        elif isinstance(other, Time):
             return BackInTime()
         else:
             return Nothing()
@@ -165,5 +165,5 @@ d = Earth()
 e = Time()
 f = Magic()
 
-h = f + f
+h = f + a
 print(h.result)
