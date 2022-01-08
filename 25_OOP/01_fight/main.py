@@ -1,34 +1,38 @@
 import random
 
 
-class Warriors:
-    health = [100, 100]
+class Warrior:
+    name = 'warrior_name'
+    health = 100
 
-    def __init__(self, index):
-        self.index = index
-
-    def take_a_blow(self):
-        Warriors.health[self.index] -= 20
-        self.print_health()
-        if Warriors.health[self.index] > 0:
+    def attack(self, war_object):
+        print(f'Бьет {self.name}')
+        if war_object.protect():
+            war_object.print_health()
             return True
-        else:
-            return False
+        return False
 
     def print_health(self):
-        print(f'У воина {self.index + 1}: осталось {Warriors.health[self.index]} очков здоровья\n')
+        print(f'У {self.name}: осталось {self.health} очков здоровья\n')
 
-    def have_a_health_reserve(self):
-        if not Warriors(self.index).take_a_blow():
-            return False
-        else:
+    def protect(self):
+        self.health -= 20
+        if self.health > 0:
             return True
+        else:
+            return False
 
 
+warrior_1 = Warrior()
+warrior_2 = Warrior()
+warrior_1.name = 'Воин 1'
+warrior_2.name = 'Воин 2'
 while True:
-    striker_warrior = random.randint(1, 2)
-    print(f'Бьет воин {striker_warrior}')
-    bruised_warrior = Warriors((striker_warrior % 2 + 1) - 1)
-    if not bruised_warrior.have_a_health_reserve():
-        print(f'Воин {striker_warrior} победил')
+    striker = random.choice([warrior_1, warrior_2])
+    if striker == warrior_1:
+        defend = warrior_2
+    else:
+        defend = warrior_1
+    if not striker.attack(defend):
+        print(f'{striker.name} победил')
         break
