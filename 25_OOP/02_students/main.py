@@ -1,20 +1,26 @@
 import random
 
 
+def score(new_object):
+    average_score = round(sum(new_object.progress)/(len(new_object.progress)), 1)
+    return average_score
+
+
 class Student:
-    def __init__(self, name, num_group):
+
+    def __init__(self, name):
         self.name = name
-        self.num_group = num_group
-        self.progress = [random.randint(1, 5) for _ in range(5)]
-
-    def record_in_a_dict(self):
-        dict_stud[self.name, self.num_group] = sum(self.progress)
+        self.num_group = 0
+        self.progress = 0
 
 
-dict_stud = dict()
+list_students = []
+
 for _ in range(10):
-    student = Student(input('Введите ФИ: '), int(input('Введите номер гр: ')))
-    student.record_in_a_dict()
+    student = Student(input('Введите ФИ: '))
+    list_students.append(student)
+    student.num_group = int(input('Введите номер гр: '))
+    student.progress = [random.randint(1, 5) for _ in range(5)]
 
-for i in sorted(dict_stud, key=dict_stud.get, reverse=True):
-    print(f'Студент {i[0]}, группа {i[1]}, средний балл успеваемости: {dict_stud[i]}')
+for i in sorted(list_students, key=score, reverse=True):
+    print(f'Студент {i.name}, группа {i.num_group}, средний балл успеваемости: {score(i)}')
