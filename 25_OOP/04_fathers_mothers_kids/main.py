@@ -3,26 +3,23 @@ import random
 
 class Parent:
 
-    def __init__(self, name, age):
+    def __init__(self, name):
         self.name = name
-        self.age = age
+        self.age = ''
         self.list_children = []
 
     def print_info(self):
         print(f'Имя родителя: {self.name}\nВозраст: {self.age}\nДети: {", ".join(self.list_children)}')
 
-    def feed(self, child_name):
-        print(f'Родитель {self.name} кормит ребенка {child_name}')
-        if not Child(child_name).condition():
-            Parent(self.name, self.age).feed(child_name)
-        else:
-            Child(child_name).is_calm()
+    def feed(self, child):
+        print(f'Родитель {self.name} кормит ребенка {child.name}')
+        if not child.is_calm():
+            self.feed(child)
 
-    def estimate(self, name):
-        print(f'Родитель {self.name} пытается успокоить ребенка {name}')
-        if not Child(name).condition():
-            print(f'Ребенок {name} по прежнему не спокоен')
-            Parent(self.name, self.age).feed(name)
+    def estimate(self, child):
+        print(f'Родитель {self.name} пытается успокоить ребенка {child.name}')
+        if not child.is_calm():
+            self.feed(child)
 
 
 class Child:
@@ -37,29 +34,37 @@ class Child:
         self.state = random.randint(0, 1)
         if self.state == 0:
             return True
+        else:
+            return False
 
     def is_calm(self):
-        if not Child(self.name).condition():
+        if not self.condition():
             print(f'Состояние ребенка {self.name} - {Child.condition_dict[self.state]}')
-            Parent(name_parent, age_parent).estimate(self.name)
+            return False
         else:
-            print(f'Ребенок {self.name} спокоен')
+            self.calm()
+            return True
+
+    def calm(self):
+        print(f'Ребенок {self.name} спокоен')
 
 
 name_parent = input('Имя родителя: ')
-age_parent = int(input('Возраст родителя: '))
-parents = Parent(name_parent, age_parent)
+parent = Parent(name_parent)
+parent.age = int(input('Возраст родителя: '))
+
 for i_kid in range(int(input('Введите кол-во детей: '))):
     name_child = input('Имя ребенка: ')
     while True:
         age_child = int(input('Возраст ребенка: '))
-        if age_parent - age_child < 16:
+        if parent.age - age_child < 16:
             print('Введите корректный возраст ребенка')
         else:
             break
-    parents.list_children.append(f'{name_child} возраст: {age_child}')
-parents.print_info()
+    parent.list_children.append(name_child)
+parent.print_info()
 
-for i_kid in parents.list_children:
-    childs = Child(i_kid.split()[0])
-    childs.is_calm()
+for i_kid in parent.list_children:
+    childs = Child(i_kid)
+    if not childs.is_calm():
+        parent.estimate(childs)
