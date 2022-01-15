@@ -2,66 +2,74 @@ import random
 
 
 class Blackjack:
+    cards_list = [
+        ['2', 2, 4], ['3', 3, 4], ['4', 4, 4], ['5', 5, 4],
+        ['6', 6, 4], ['7', 7, 4], ['8', 8, 4], ['9', 9, 4],
+        ['10', 10, 4], ['jack', 10, 4], ['ace', 11, 4],
+        ['queen', 10, 4], ['king', 10, 4]
+    ]
 
-    def __init__(self, name):
-        self.hand = dict()
-        self.name = name
+    def __init__(self, name_player):
+        self.name = 'Компьютер'
+        self.cards = dict()
+        self.player = name_player
 
-    def take_cards(self, count):
+    def start(self):
+        self.take_cards(2, self.player.cards)
+        while True:
+            if sum(self.player.cards.values()) > 21:
+                print(f'Перебор! Сумма игрока {sum(self.player.cards.values())}! Компьютер выиграл!')
+                break
+            action = input('\nеще?/стоп ')
+            if action == 'еще':
+                self.take_cards(1, self.player.cards)
+            else:
+                self.take_cards(2, self.cards)
+                print(f'\nСумма очков игрока: {sum(self.player.cards.values())}')
+                print(f'Сумма очков компьютера: {sum(self.cards.values())}')
+                if sum(self.player.cards.values()) == 21:
+                    if sum(self.cards.values()) == 21:
+                        print('Ничья')
+                    else:
+                        print('Игрок победил')
+                elif sum(self.cards.values()) == 21:
+                    print('Компьютер победил')
+                elif sum(self.player.cards.values()) > sum(self.cards.values()):
+                    print('Игрок победил')
+                elif sum(self.player.cards.values()) < sum(self.cards.values()):
+                    print('Компьютер победил')
+                else:
+                    print('Ничья')
+                break
+
+    def take_cards(self, count, cards):
         for num in range(count):
+            card_player = random.randint(0, len(Blackjack(self.player.cards).cards_list) - 1)
             while True:
-                card_player = random.randint(0, len(cards_list) - 1)
-                if cards_list[card_player][2] == 0:
-                    cards_list.remove(cards_list[card_player])
+                if Blackjack(self.player).cards_list[card_player][2] == 0:
+                    Blackjack(self.player).cards_list.remove(Blackjack(self.player).cards_list[card_player])
                 else:
                     break
-            if cards_list[card_player][0] in self.hand:
-                self.hand[cards_list[card_player][0]] += cards_list[card_player][1]
+            if Blackjack(self.player).cards_list[card_player][0] in cards:
+                cards[Blackjack(self.player).cards_list[card_player][0]] \
+                    += Blackjack(self.player).cards_list[card_player][1]
             else:
-                self.hand[cards_list[card_player][0]] = cards_list[card_player][1]
-            if self.summ() > 21:
-                if 'ace' in self.hand:
-                    self.hand['ace'] = 1
-            cards_list[card_player][2] -= 1
-            print(f'Карта {self.name} {num + 1}: {cards_list[card_player][0]}')
-
-    def summ(self):
-        return sum(self.hand.values())
+                cards[Blackjack(self.player).cards_list[card_player][0]] \
+                    = Blackjack(self.player).cards_list[card_player][1]
+            if sum(cards.values()) > 21:
+                if 'ace' in cards:
+                    cards['ace'] = 1
+            Blackjack(self.player).cards_list[card_player][2] -= 1
+            print(f'Карта {num + 1}: {Blackjack(self.player).cards_list[card_player][0]}')
 
 
-cards_list = [
-    ['2', 2, 4], ['3', 3, 4], ['4', 4, 4], ['5', 5, 4],
-    ['6', 6, 4], ['7', 7, 4], ['8', 8, 4], ['9', 9, 4],
-    ['10', 10, 4], ['jack', 10, 4], ['ace', 11, 4],
-    ['queen', 10, 4], ['king', 10, 4]
-]
-player_hand = Blackjack('Игрок')
-casino_hand = Blackjack('Компьютер')
+class Player:
 
-player_hand.take_cards(2)
+    def __init__(self, name):
+        self.name = name
+        self.cards = dict()
 
-while True:
-    if player_hand.summ() > 21:
-        print(f'Перебор! Сумма игрока {player_hand.summ()}! Компьютер выиграл!')
-        break
-    action = input('\nеще?/стоп ')
-    if action == 'еще':
-        player_hand.take_cards(1)
-    else:
-        casino_hand.take_cards(2)
-        print(f'\nСумма очков игрока: {player_hand.summ()}')
-        print(f'Сумма очков компьютера: {casino_hand.summ()}')
-        if player_hand.summ() == 21:
-            if casino_hand.summ() == 21:
-                print('Ничья')
-            else:
-                print('Игрок победил')
-        elif casino_hand.summ() == 21:
-            print('Компьютер победил')
-        elif player_hand.summ() > casino_hand.summ():
-            print('Игрок победил')
-        elif player_hand.summ() < casino_hand.summ():
-            print('Компьютер победил')
-        else:
-            print('Ничья')
-        break
+
+player_hand = Player(input('Введите имя игрока: '))
+play = Blackjack(player_hand)
+play.start()
