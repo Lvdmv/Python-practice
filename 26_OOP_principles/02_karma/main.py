@@ -21,9 +21,16 @@ class DepressionError(Exception):
     pass
 
 
+def error_save(error):
+    print(error)
+    with open('karma.log', 'a') as errors_file:
+        errors_file.write(f'Возникла ошибка {error}\n')
+
+
 def one_day():
     if random.randint(1, 10) == 1:
-        raise random.choice([KillError, DrunkError, CarCrashError, GluttonyError, DepressionError])
+        mistake = random.choice([KillError, DrunkError, CarCrashError, GluttonyError, DepressionError])
+        raise mistake
     else:
         return random.randint(1, 7)
 
@@ -36,15 +43,15 @@ while karma < 500:
         print(f'\nДень дал плюс {bonus_karma} очков к карме')
         print(f'Текущее кол-во очков кармы: {karma}\n')
     except KillError:
-        print('Умер')
+        error_save('Умер')
         break
     except DrunkError:
-        print('Напился, нет очков к карме')
+        error_save('Напился, нет очков к карме')
     except CarCrashError:
-        print('Сломалась машина, нет очков к карме')
+        error_save('Сломалась машина, нет очков к карме')
     except GluttonyError:
-        print('Объелся, нет очков к карме')
+        error_save('Объелся, нет очков к карме')
     except DepressionError:
-        print('Депрессия, нет очков к карме')
+        error_save('Депрессия, нет очков к карме')
 if karma >= 500:
     print('Просветление достигнуто!')
