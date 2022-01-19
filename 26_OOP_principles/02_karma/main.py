@@ -29,8 +29,7 @@ def error_save(error):
 
 def one_day():
     if random.randint(1, 10) == 1:
-        mistake = random.choice([KillError, DrunkError, CarCrashError, GluttonyError, DepressionError])
-        raise mistake
+        raise random.choice([KillError, DrunkError, CarCrashError, GluttonyError, DepressionError])
     else:
         return random.randint(1, 7)
 
