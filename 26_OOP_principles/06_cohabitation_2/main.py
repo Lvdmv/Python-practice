@@ -107,8 +107,8 @@ class Husband(Person):
 
     def go_to_work(self):
         print(f'{self.get_name()} идет на работу')
-        self.house.cash += 290
-        Husband.amt_money_earned += 150
+        self.house.cash += 300
+        Husband.amt_money_earned += 300
         self.hungry()
 
     def play(self):
